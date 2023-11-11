@@ -26,14 +26,33 @@ document.getElementById('rectangulo').innerHTML = "El perimetro del rectangulo e
 //Comparar dos números
 
 function comparar(){
-    let valorA = document.getElementById("valor-a");
-    let valorB = document.getElementById("valor-b");
+  
+  let inputValorA = document.getElementById("valor-a").value;
+  let inputValorB = document.getElementById("valor-b").value;
+    
+  let valorA = parseFloat(inputValorA);
+  let valorB = parseFloat(inputValorB);
+  
+  // console.log(valorA);
+  console.log(typeof(valorA));
 
-    console.log(valorA);
-    
-    
-    
-    
+  
+  if (valorA > valorB) {
+    document.getElementById('el-mayor').innerHTML = "El valor A es el mayor";
+      
+  } else {
+    if (valorA < valorB) {
+      document.getElementById('el-mayor').innerHTML = "El valor B es el mayor";  
+
+    } else {
+      if (valorA == valorB) {
+        document.getElementById('el-mayor').innerHTML = "Los valores son iguales";
+        
+      } else {
+        document.getElementById('el-mayor').innerHTML = "Los datos son errados";
+      }
+    }        
+  }  
 }
 
 
