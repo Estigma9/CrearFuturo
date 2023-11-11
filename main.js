@@ -23,5 +23,20 @@ let areaRectangulo = lado1*lado2;
 document.getElementById('rectangulo').innerHTML = "El perimetro del rectangulo es: " + perimetroRectangulo + " y el área del rectangulo es: " + areaRectangulo;
 
 
+//Comparar dos números
+
+function comparar(){
+    let valorA = document.getElementById("valor-a");
+    let valorB = document.getElementById("valor-b");
+
+    console.log(valorA);
+    
+    
+    
+    
+}
+
+
+
 
 
