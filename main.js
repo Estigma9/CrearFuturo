@@ -57,5 +57,28 @@ function comparar(){
 
 
 
+// Saludar - Estructura repetitiva
+//Arrow function
+saludar = ()=>{
+  let inputCantidad = document.getElementById("cantidad").value;
+
+  let cantidad = parseInt(inputCantidad);
+
+  let contador = 0;
+  let mensaje = '';
+
+  while (contador < cantidad) {
+
+    mensaje = mensaje + ' ' + 'hola' + '<br>'; 
+    document.getElementById('saludos').innerHTML = mensaje;
+    contador = contador + 1;    
+  }
+
+}
+
+
+
+
+
 
 
