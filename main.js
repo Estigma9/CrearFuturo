@@ -134,3 +134,79 @@ document.getElementById("demo4.3").innerHTML = datosRecibidos;
 
 document.getElementById("demo4.4").innerHTML = datosRecibidos[5][1];
 
+//Formas de crear un Arreglo
+var misMaterias = [];
+
+const misVideoJuegos = new Array(
+  "Mario Bross",
+  "Zelda",
+  "Super Metroid"
+);
+
+profesiones = [
+  "Ingeniería",
+  "Medicina",
+  "Diseño",
+  "Economía",
+  "Derecho"
+];
+
+document.getElementById("demo4.5").innerHTML = profesiones;
+
+// profesiones.pop();
+
+// document.getElementById("demo4.6").innerHTML = profesiones;
+
+document.getElementById("demo4.6").innerHTML = profesiones.pop();
+
+
+//OBJETOS
+let pc1 = {
+  nombre: "Estigma",
+  marca: "Lenovo",
+  procesador: "Intel Core I7",
+  ram: "16GB",
+  disco: "1TB",
+  cantidad: 5   
+};
+
+document.getElementById("demo4.7").innerHTML = pc1["marca"];
+
+document.getElementById("demo4.8").innerHTML = pc1.disco;
+
+
+fraseSalida = `Esta est mi computadora, su nombre es: <br> ${pc1["nombre"]}, <br>su marca es ${pc1["marca"]},<br> con un procesador ${pc1["procesador"]}, <br> con una ram de ${pc1["ram"]}, <br> y un disco duro de ${pc1.disco}<br>`;
+
+
+fraseSalida1 = 'Esta est mi computadora, su nombre es: <br> ${pc1["nombre"]}, <br>su marca es ${pc1["marca"]},<br> con un procesador ${pc1["procesador"]}, <br> con una ram de ${pc1["ram"]}, <br> y un disco duro de ${pc1.disco}<br>';
+
+document.getElementById("demo4.9").innerHTML = fraseSalida1;
+document.getElementById("demo4.10").innerHTML = fraseSalida;
+
+
+//EJERCICIO OBJETOS
+var carro = {
+  //Atributos
+  tipo: "Ferrari",
+  modelo: "F40",
+  color: "Rosso Corsa",
+
+  //Metodos
+  nombreCompleto: function(){
+    return this.tipo + " " + this.modelo;
+  },
+
+  nombreColor: function(){
+    return carro.tipo + " - " + this.color;
+  }
+};
+
+document.getElementById("demo4.11").innerHTML = "El carro es un " + carro.tipo;
+
+document.getElementById("demo4.12").innerHTML = "El color es  " + carro["color"];
+
+document.getElementById("demo4.13").innerHTML = carro.nombreCompleto();
+
+document.getElementById("demo4.14").innerHTML = carro.nombreColor();
+
+
